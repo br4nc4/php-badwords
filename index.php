@@ -6,6 +6,8 @@ var_dump($_GET);
 
 echo $parag;
 echo "<br>";
-echo "<strong>Lunghezza paragrafo:</strong>" . strlen($parag);
+echo "<strong>Lunghezza paragrafo: </strong>" . strlen($parag);
+echo "<br>";
+echo "<strong>Parola censurata: </strong>" . $censura . "<strong> alla posizione: </strong>" . stripos($parag, $censura); 
 ?>
 
