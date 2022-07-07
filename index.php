@@ -8,6 +8,14 @@ echo $parag;
 echo "<br>";
 echo "<strong>Lunghezza paragrafo: </strong>" . strlen($parag);
 echo "<br>";
-echo "<strong>Parola censurata: </strong>" . $censura . "<strong> alla posizione: </strong>" . stripos($parag, $censura); 
+echo "<strong>Parola censurata: </strong>" . $censura . "<strong> alla posizione: </strong>" . stripos($parag, $censura);
+
+echo "<br>";
+echo "<strong>Paragrafo con censura</strong>";
+echo "<br>";
+
+if(stripos($parag, $censura) !== false) {
+    echo str_replace($censura, "***", $parag);
+}
 ?>
 
